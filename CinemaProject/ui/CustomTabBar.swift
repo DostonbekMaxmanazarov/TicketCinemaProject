@@ -24,7 +24,6 @@ struct CustomTabBar: View {
                             .foregroundColor(.white)
                             .offset(y: currentTab == tab ? -16 : 0)
                     }
-                    
                 }
             }
             .frame(maxWidth: .infinity)
@@ -50,6 +49,14 @@ struct CustomTabBar: View {
         .padding(.top, 30)
         .background(.ultraThinMaterial)
         .background(LinearGradient(colors: backgroundColor, startPoint: .leading, endPoint: .trailing))
+    }
+    
+    func indicatorOffset(width: CGFloat) -> CGFloat {
+        let index = CGFloat(getIndex())
+        if index == 0 {return 0}
+        let buttonWidth = width / CGFloat(TabEnum.allCases.count)
+        
+        return index * buttonWidth
     }
     
     func getIndex() -> Int {
