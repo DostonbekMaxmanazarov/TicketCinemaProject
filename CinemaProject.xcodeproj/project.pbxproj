@@ -14,6 +14,14 @@
 		FA386F3B295B04C5004FE40D /* CinemaProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA386F3A295B04C5004FE40D /* CinemaProjectTests.swift */; };
 		FA386F45295B04C5004FE40D /* CinemaProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA386F44295B04C5004FE40D /* CinemaProjectUITests.swift */; };
 		FA386F47295B04C5004FE40D /* CinemaProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA386F46295B04C5004FE40D /* CinemaProjectUITestsLaunchTests.swift */; };
+		FA386F54295B0561004FE40D /* CircleBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA386F53295B0561004FE40D /* CircleBackground.swift */; };
+		FA386F58295B07D2004FE40D /* TicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA386F57295B07D2004FE40D /* TicketView.swift */; };
+		FA386F5B295B2643004FE40D /* TicketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA386F5A295B2643004FE40D /* TicketModel.swift */; };
+		FA386F5E295C0EB8004FE40D /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA386F5D295C0EB8004FE40D /* Ticket.swift */; };
+		FA386F61295C1562004FE40D /* CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA386F60295C1562004FE40D /* CornerRadius.swift */; };
+		FA386F63295C21C5004FE40D /* Tickets.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA386F62295C21C5004FE40D /* Tickets.swift */; };
+		FA386F65295C67A5004FE40D /* TabEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA386F64295C67A5004FE40D /* TabEnum.swift */; };
+		FA386F67295C6FC6004FE40D /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA386F66295C6FC6004FE40D /* CustomTabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +52,14 @@
 		FA386F40295B04C5004FE40D /* CinemaProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CinemaProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA386F44295B04C5004FE40D /* CinemaProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaProjectUITests.swift; sourceTree = "<group>"; };
 		FA386F46295B04C5004FE40D /* CinemaProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FA386F53295B0561004FE40D /* CircleBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleBackground.swift; sourceTree = "<group>"; };
+		FA386F57295B07D2004FE40D /* TicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketView.swift; sourceTree = "<group>"; };
+		FA386F5A295B2643004FE40D /* TicketModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketModel.swift; sourceTree = "<group>"; };
+		FA386F5D295C0EB8004FE40D /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
+		FA386F60295C1562004FE40D /* CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadius.swift; sourceTree = "<group>"; };
+		FA386F62295C21C5004FE40D /* Tickets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tickets.swift; sourceTree = "<group>"; };
+		FA386F64295C67A5004FE40D /* TabEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabEnum.swift; sourceTree = "<group>"; };
+		FA386F66295C6FC6004FE40D /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +110,12 @@
 		FA386F28295B04C4004FE40D /* CinemaProject */ = {
 			isa = PBXGroup;
 			children = (
+				FA386F5C295C0E70004FE40D /* cards */,
+				FA386F59295B262C004FE40D /* model */,
+				FA386F56295B05BC004FE40D /* views */,
+				FA386F55295B057C004FE40D /* ui */,
+				FA386F5F295C153D004FE40D /* utils */,
 				FA386F29295B04C4004FE40D /* CinemaProjectApp.swift */,
-				FA386F2B295B04C4004FE40D /* ContentView.swift */,
 				FA386F2D295B04C5004FE40D /* Assets.xcassets */,
 				FA386F2F295B04C5004FE40D /* Preview Content */,
 			);
@@ -125,6 +145,50 @@
 				FA386F46295B04C5004FE40D /* CinemaProjectUITestsLaunchTests.swift */,
 			);
 			path = CinemaProjectUITests;
+			sourceTree = "<group>";
+		};
+		FA386F55295B057C004FE40D /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				FA386F53295B0561004FE40D /* CircleBackground.swift */,
+				FA386F66295C6FC6004FE40D /* CustomTabBar.swift */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		FA386F56295B05BC004FE40D /* views */ = {
+			isa = PBXGroup;
+			children = (
+				FA386F2B295B04C4004FE40D /* ContentView.swift */,
+				FA386F57295B07D2004FE40D /* TicketView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		FA386F59295B262C004FE40D /* model */ = {
+			isa = PBXGroup;
+			children = (
+				FA386F5A295B2643004FE40D /* TicketModel.swift */,
+				FA386F64295C67A5004FE40D /* TabEnum.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		FA386F5C295C0E70004FE40D /* cards */ = {
+			isa = PBXGroup;
+			children = (
+				FA386F5D295C0EB8004FE40D /* Ticket.swift */,
+				FA386F62295C21C5004FE40D /* Tickets.swift */,
+			);
+			path = cards;
+			sourceTree = "<group>";
+		};
+		FA386F5F295C153D004FE40D /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				FA386F60295C1562004FE40D /* CornerRadius.swift */,
+			);
+			path = utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +321,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA386F65295C67A5004FE40D /* TabEnum.swift in Sources */,
+				FA386F5E295C0EB8004FE40D /* Ticket.swift in Sources */,
+				FA386F61295C1562004FE40D /* CornerRadius.swift in Sources */,
+				FA386F5B295B2643004FE40D /* TicketModel.swift in Sources */,
+				FA386F54295B0561004FE40D /* CircleBackground.swift in Sources */,
 				FA386F2C295B04C4004FE40D /* ContentView.swift in Sources */,
+				FA386F67295C6FC6004FE40D /* CustomTabBar.swift in Sources */,
+				FA386F58295B07D2004FE40D /* TicketView.swift in Sources */,
 				FA386F2A295B04C4004FE40D /* CinemaProjectApp.swift in Sources */,
+				FA386F63295C21C5004FE40D /* Tickets.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
