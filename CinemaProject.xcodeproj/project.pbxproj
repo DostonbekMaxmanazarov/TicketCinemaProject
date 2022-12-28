@@ -17,11 +17,11 @@
 		FA386F54295B0561004FE40D /* CircleBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA386F53295B0561004FE40D /* CircleBackground.swift */; };
 		FA386F58295B07D2004FE40D /* TicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA386F57295B07D2004FE40D /* TicketView.swift */; };
 		FA386F5B295B2643004FE40D /* TicketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA386F5A295B2643004FE40D /* TicketModel.swift */; };
-		FA386F5E295C0EB8004FE40D /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA386F5D295C0EB8004FE40D /* Ticket.swift */; };
 		FA386F61295C1562004FE40D /* CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA386F60295C1562004FE40D /* CornerRadius.swift */; };
 		FA386F63295C21C5004FE40D /* Tickets.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA386F62295C21C5004FE40D /* Tickets.swift */; };
 		FA386F65295C67A5004FE40D /* TabEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA386F64295C67A5004FE40D /* TabEnum.swift */; };
 		FA386F67295C6FC6004FE40D /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA386F66295C6FC6004FE40D /* CustomTabBar.swift */; };
+		FAFD522D295C844E00715E05 /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFD522C295C844E00715E05 /* Ticket.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,11 +55,11 @@
 		FA386F53295B0561004FE40D /* CircleBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleBackground.swift; sourceTree = "<group>"; };
 		FA386F57295B07D2004FE40D /* TicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketView.swift; sourceTree = "<group>"; };
 		FA386F5A295B2643004FE40D /* TicketModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketModel.swift; sourceTree = "<group>"; };
-		FA386F5D295C0EB8004FE40D /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
 		FA386F60295C1562004FE40D /* CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadius.swift; sourceTree = "<group>"; };
 		FA386F62295C21C5004FE40D /* Tickets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tickets.swift; sourceTree = "<group>"; };
 		FA386F64295C67A5004FE40D /* TabEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabEnum.swift; sourceTree = "<group>"; };
 		FA386F66295C6FC6004FE40D /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		FAFD522C295C844E00715E05 /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,8 +177,8 @@
 		FA386F5C295C0E70004FE40D /* cards */ = {
 			isa = PBXGroup;
 			children = (
-				FA386F5D295C0EB8004FE40D /* Ticket.swift */,
 				FA386F62295C21C5004FE40D /* Tickets.swift */,
+				FAFD522C295C844E00715E05 /* Ticket.swift */,
 			);
 			path = cards;
 			sourceTree = "<group>";
@@ -321,8 +321,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAFD522D295C844E00715E05 /* Ticket.swift in Sources */,
 				FA386F65295C67A5004FE40D /* TabEnum.swift in Sources */,
-				FA386F5E295C0EB8004FE40D /* Ticket.swift in Sources */,
 				FA386F61295C1562004FE40D /* CornerRadius.swift in Sources */,
 				FA386F5B295B2643004FE40D /* TicketModel.swift in Sources */,
 				FA386F54295B0561004FE40D /* CircleBackground.swift in Sources */,
