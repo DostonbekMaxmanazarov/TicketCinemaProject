@@ -7,15 +7,12 @@ struct TicketView: View {
     
     var body: some View {
         ZStack {
-            
             CircleBackground(color: Color("colorGreenCircle"))
                 .blur(radius: animate ? 10 : 80)
                 .offset(x: animate ? -50 : -130, y: animate ? -30 : -100)
                 .task {
                     withAnimation(.easeInOut(duration: 2).repeatForever()){
                         animate.toggle()
-                        let log = Logger(subsystem: "TicketView", category: "my animate")
-                        log.debug("animate \(animate)")
                     }
                 }
             

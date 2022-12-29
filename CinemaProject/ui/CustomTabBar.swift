@@ -9,7 +9,10 @@ struct CustomTabBar: View {
     var gradientStroke = [Color("colorBlueStroke"), Color("colorLightBlueStroke")]
     
     var body: some View {
-        VStack {
+        GeometryReader { geometry in
+            
+            let geometryWidth = geometry.size.width
+            
             HStack(spacing: 0.0) {
                 ForEach(TabEnum.allCases, id:\.rawValue) { tab in
                     
@@ -32,18 +35,19 @@ struct CustomTabBar: View {
                     .fill(.ultraThinMaterial)
                     .frame(width: 80, height: 80)
                     .shadow(color: Color.black.opacity(0.25), radius: 20, x: 0, y: 10)
+                    .offset(x: indicatorOffset(width: geometryWidth), y: -16)
                     .overlay{
                         Circle()
                             .trim(from: 0, to: CGFloat(0.5))
                             .stroke(
-                                LinearGradient(colors: gradientStroke, startPoint: .top, endPoint: .bottom), style: StrokeStyle(lineWidth: 2))
+                                LinearGradient(colors: gradientStroke, startPoint: .top, endPoint: .bottom), style: StrokeStyle(lineWidth: 2)
+                            )
+                            .rotationEffect(.degrees(135))
+                            .frame(width: 78, height: 78)
+                            .offset(x: indicatorOffset(width: geometryWidth), y: -16)
+                        
                     }
-                    .rotationEffect(.degrees(135))
-                    .frame(width: 78, height: 78)
-                
             }
-            
-            
         }
         .frame( height: 24)
         .padding(.top, 30)
@@ -53,7 +57,7 @@ struct CustomTabBar: View {
     
     func indicatorOffset(width: CGFloat) -> CGFloat {
         let index = CGFloat(getIndex())
-        if index == 0 {return 0}
+        if index == 0 { return 0 }
         let buttonWidth = width / CGFloat(TabEnum.allCases.count)
         
         return index * buttonWidth

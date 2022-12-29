@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA385FE3295D591100AD9ACC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA385FE2295D591100AD9ACC /* HomeView.swift */; };
+		FA385FE5295D5B4D00AD9ACC /* CustomSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA385FE4295D5B4D00AD9ACC /* CustomSearchBar.swift */; };
+		FA385FE7295D5DFD00AD9ACC /* ScrollSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA385FE6295D5DFD00AD9ACC /* ScrollSectionView.swift */; };
 		FA386F2A295B04C4004FE40D /* CinemaProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA386F29295B04C4004FE40D /* CinemaProjectApp.swift */; };
 		FA386F2C295B04C4004FE40D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA386F2B295B04C4004FE40D /* ContentView.swift */; };
 		FA386F2E295B04C5004FE40D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA386F2D295B04C5004FE40D /* Assets.xcassets */; };
@@ -42,6 +45,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA385FE2295D591100AD9ACC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FA385FE4295D5B4D00AD9ACC /* CustomSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSearchBar.swift; sourceTree = "<group>"; };
+		FA385FE6295D5DFD00AD9ACC /* ScrollSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollSectionView.swift; sourceTree = "<group>"; };
 		FA386F26295B04C4004FE40D /* CinemaProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CinemaProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA386F29295B04C4004FE40D /* CinemaProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaProjectApp.swift; sourceTree = "<group>"; };
 		FA386F2B295B04C4004FE40D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -152,6 +158,8 @@
 			children = (
 				FA386F53295B0561004FE40D /* CircleBackground.swift */,
 				FA386F66295C6FC6004FE40D /* CustomTabBar.swift */,
+				FA385FE4295D5B4D00AD9ACC /* CustomSearchBar.swift */,
+				FA385FE6295D5DFD00AD9ACC /* ScrollSectionView.swift */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -161,6 +169,7 @@
 			children = (
 				FA386F2B295B04C4004FE40D /* ContentView.swift */,
 				FA386F57295B07D2004FE40D /* TicketView.swift */,
+				FA385FE2295D591100AD9ACC /* HomeView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -323,14 +332,17 @@
 			files = (
 				FAFD522D295C844E00715E05 /* Ticket.swift in Sources */,
 				FA386F65295C67A5004FE40D /* TabEnum.swift in Sources */,
+				FA385FE5295D5B4D00AD9ACC /* CustomSearchBar.swift in Sources */,
 				FA386F61295C1562004FE40D /* CornerRadius.swift in Sources */,
 				FA386F5B295B2643004FE40D /* TicketModel.swift in Sources */,
 				FA386F54295B0561004FE40D /* CircleBackground.swift in Sources */,
+				FA385FE3295D591100AD9ACC /* HomeView.swift in Sources */,
 				FA386F2C295B04C4004FE40D /* ContentView.swift in Sources */,
 				FA386F67295C6FC6004FE40D /* CustomTabBar.swift in Sources */,
 				FA386F58295B07D2004FE40D /* TicketView.swift in Sources */,
 				FA386F2A295B04C4004FE40D /* CinemaProjectApp.swift in Sources */,
 				FA386F63295C21C5004FE40D /* Tickets.swift in Sources */,
+				FA385FE7295D5DFD00AD9ACC /* ScrollSectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
