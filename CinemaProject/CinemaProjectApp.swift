@@ -4,7 +4,7 @@ import SwiftUI
 struct CinemaProjectApp: App {
     var body: some Scene {
         WindowGroup {
-            TicketView()
+            ContentView()
         }
     }
 }

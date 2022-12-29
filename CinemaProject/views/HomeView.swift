@@ -35,9 +35,16 @@ struct HomeView: View {
                     .padding(16)
                 
                 ScrollView(.vertical, showsIndicators: false) {
-                    VStack {
+                    VStack(spacing: 20.0) {
                         ScrollSectionView(title: "Now playing", images: images1)
+                        
+                        ScrollSectionView(title: "Coming soon", images: images2)
+                        
+                        ScrollSectionView(title: "Top movies", images: images3)
+                        
+                        ScrollSectionView(title: "Favorite", images: images1)
                     }
+                    .padding(.bottom, 56)
                 }
                 
             }.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)

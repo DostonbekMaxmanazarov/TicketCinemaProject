@@ -38,10 +38,10 @@ struct Line: Shape {
 
 //https://rekerrsive.medium.com/three-ways-to-pop-to-the-root-view-in-a-swiftui-navigationview-430aee720c9a
 struct NavigationUtil {
-//    static func popToRootView() {
-//        findNavigationController(viewController: UIApplication.shared.windows.filter { $0.isKeyWindow }.first?.rootViewController)?
-//            .popToRootViewController(animated: true)
-//    }
+    static func popToRootView() {
+        findNavigationController(viewController: UIApplication.shared.windows.filter { $0.isKeyWindow }.first?.rootViewController)?
+            .popToRootViewController(animated: true)
+    }
     static func findNavigationController(viewController: UIViewController?) -> UINavigationController? {
         guard let viewController = viewController else {
             return nil

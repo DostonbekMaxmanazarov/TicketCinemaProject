@@ -10,6 +10,14 @@
 		FA385FE3295D591100AD9ACC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA385FE2295D591100AD9ACC /* HomeView.swift */; };
 		FA385FE5295D5B4D00AD9ACC /* CustomSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA385FE4295D5B4D00AD9ACC /* CustomSearchBar.swift */; };
 		FA385FE7295D5DFD00AD9ACC /* ScrollSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA385FE6295D5DFD00AD9ACC /* ScrollSectionView.swift */; };
+		FA385FE9295D9C2800AD9ACC /* BookingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA385FE8295D9C2800AD9ACC /* BookingView.swift */; };
+		FA385FEB295D9EF800AD9ACC /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA385FEA295D9EF800AD9ACC /* CircleButton.swift */; };
+		FA385FED295DA1DB00AD9ACC /* DateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA385FEC295DA1DB00AD9ACC /* DateButton.swift */; };
+		FA385FEF295DA5AD00AD9ACC /* TimeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA385FEE295DA5AD00AD9ACC /* TimeButton.swift */; };
+		FA385FF1295DA7A200AD9ACC /* LargeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA385FF0295DA7A200AD9ACC /* LargeButton.swift */; };
+		FA385FF3295DB00100AD9ACC /* SeatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA385FF2295DB00100AD9ACC /* SeatsView.swift */; };
+		FA385FF5295DB59300AD9ACC /* CustomStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA385FF4295DB59300AD9ACC /* CustomStatus.swift */; };
+		FA385FF7295DBD6000AD9ACC /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA385FF6295DBD6000AD9ACC /* RoundButton.swift */; };
 		FA386F2A295B04C4004FE40D /* CinemaProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA386F29295B04C4004FE40D /* CinemaProjectApp.swift */; };
 		FA386F2C295B04C4004FE40D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA386F2B295B04C4004FE40D /* ContentView.swift */; };
 		FA386F2E295B04C5004FE40D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA386F2D295B04C5004FE40D /* Assets.xcassets */; };
@@ -48,6 +56,14 @@
 		FA385FE2295D591100AD9ACC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		FA385FE4295D5B4D00AD9ACC /* CustomSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSearchBar.swift; sourceTree = "<group>"; };
 		FA385FE6295D5DFD00AD9ACC /* ScrollSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollSectionView.swift; sourceTree = "<group>"; };
+		FA385FE8295D9C2800AD9ACC /* BookingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingView.swift; sourceTree = "<group>"; };
+		FA385FEA295D9EF800AD9ACC /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		FA385FEC295DA1DB00AD9ACC /* DateButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateButton.swift; sourceTree = "<group>"; };
+		FA385FEE295DA5AD00AD9ACC /* TimeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeButton.swift; sourceTree = "<group>"; };
+		FA385FF0295DA7A200AD9ACC /* LargeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeButton.swift; sourceTree = "<group>"; };
+		FA385FF2295DB00100AD9ACC /* SeatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatsView.swift; sourceTree = "<group>"; };
+		FA385FF4295DB59300AD9ACC /* CustomStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStatus.swift; sourceTree = "<group>"; };
+		FA385FF6295DBD6000AD9ACC /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		FA386F26295B04C4004FE40D /* CinemaProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CinemaProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA386F29295B04C4004FE40D /* CinemaProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaProjectApp.swift; sourceTree = "<group>"; };
 		FA386F2B295B04C4004FE40D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -160,6 +176,12 @@
 				FA386F66295C6FC6004FE40D /* CustomTabBar.swift */,
 				FA385FE4295D5B4D00AD9ACC /* CustomSearchBar.swift */,
 				FA385FE6295D5DFD00AD9ACC /* ScrollSectionView.swift */,
+				FA385FEA295D9EF800AD9ACC /* CircleButton.swift */,
+				FA385FEC295DA1DB00AD9ACC /* DateButton.swift */,
+				FA385FEE295DA5AD00AD9ACC /* TimeButton.swift */,
+				FA385FF0295DA7A200AD9ACC /* LargeButton.swift */,
+				FA385FF4295DB59300AD9ACC /* CustomStatus.swift */,
+				FA385FF6295DBD6000AD9ACC /* RoundButton.swift */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -170,6 +192,8 @@
 				FA386F2B295B04C4004FE40D /* ContentView.swift */,
 				FA386F57295B07D2004FE40D /* TicketView.swift */,
 				FA385FE2295D591100AD9ACC /* HomeView.swift */,
+				FA385FE8295D9C2800AD9ACC /* BookingView.swift */,
+				FA385FF2295DB00100AD9ACC /* SeatsView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -330,19 +354,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA385FEB295D9EF800AD9ACC /* CircleButton.swift in Sources */,
 				FAFD522D295C844E00715E05 /* Ticket.swift in Sources */,
 				FA386F65295C67A5004FE40D /* TabEnum.swift in Sources */,
+				FA385FE9295D9C2800AD9ACC /* BookingView.swift in Sources */,
 				FA385FE5295D5B4D00AD9ACC /* CustomSearchBar.swift in Sources */,
+				FA385FED295DA1DB00AD9ACC /* DateButton.swift in Sources */,
 				FA386F61295C1562004FE40D /* CornerRadius.swift in Sources */,
 				FA386F5B295B2643004FE40D /* TicketModel.swift in Sources */,
 				FA386F54295B0561004FE40D /* CircleBackground.swift in Sources */,
+				FA385FF7295DBD6000AD9ACC /* RoundButton.swift in Sources */,
 				FA385FE3295D591100AD9ACC /* HomeView.swift in Sources */,
+				FA385FF3295DB00100AD9ACC /* SeatsView.swift in Sources */,
 				FA386F2C295B04C4004FE40D /* ContentView.swift in Sources */,
 				FA386F67295C6FC6004FE40D /* CustomTabBar.swift in Sources */,
 				FA386F58295B07D2004FE40D /* TicketView.swift in Sources */,
 				FA386F2A295B04C4004FE40D /* CinemaProjectApp.swift in Sources */,
+				FA385FEF295DA5AD00AD9ACC /* TimeButton.swift in Sources */,
+				FA385FF5295DB59300AD9ACC /* CustomStatus.swift in Sources */,
 				FA386F63295C21C5004FE40D /* Tickets.swift in Sources */,
 				FA385FE7295D5DFD00AD9ACC /* ScrollSectionView.swift in Sources */,
+				FA385FF1295DA7A200AD9ACC /* LargeButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

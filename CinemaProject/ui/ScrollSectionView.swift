@@ -15,10 +15,15 @@ struct ScrollSectionView: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 16.0) {
                     ForEach(images.indices, id:\.self) { index in
-                        Image(images[index])
-                            .resizable()
-                            .frame(width: 120, height: 130)
-                            .cornerRadius(20)
+                        
+                        NavigationLink{
+                            BookingView()
+                        } label: {
+                            Image(images[index])
+                                .resizable()
+                                .frame(width: 120, height: 130)
+                                .cornerRadius(20)
+                        }
                     }
                 }
                 .offset(x: 20)
