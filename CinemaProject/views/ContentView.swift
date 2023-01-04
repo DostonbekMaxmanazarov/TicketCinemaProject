@@ -4,7 +4,7 @@ struct ContentView: View {
     
     @State var currentTab: TabEnum = .home
     
-    init(){
+    init() {
         UITabBar.appearance().isHidden = true
     }
     
@@ -32,8 +32,7 @@ struct ContentView: View {
                 
             }
             .ignoresSafeArea(.keyboard)
-            
-        }.navigationBarHidden(false)
+        }
     }
 }
 

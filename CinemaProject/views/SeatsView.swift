@@ -2,14 +2,14 @@ import SwiftUI
 
 struct SeatsView: View {
     
-    @Environment(\.dismiss) var dismiss
+    @Environment(\.presentationMode) var dismiss
     @State var animate = false
     @State var showButton = false
     var body: some View {
         VStack(spacing: 0.0) {
             HStack {
                 CircleButton(action: {
-                    dismiss()
+                    dismiss.wrappedValue.dismiss()
                 }, image: "arrow.left")
                 
                 Spacer()
@@ -125,6 +125,7 @@ struct SeatsView: View {
         .background(Color("colorBackgroundDarker"))
         .ignoresSafeArea()
         .navigationBarBackButtonHidden(true)
+        .navigationBarHidden(true)
     }
 }
 

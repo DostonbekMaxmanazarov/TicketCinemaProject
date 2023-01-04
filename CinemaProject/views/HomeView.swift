@@ -50,7 +50,10 @@ struct HomeView: View {
             }.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
             
         }.background(
-            LinearGradient(gradient: Gradient(colors: [Color("colorBackgroundDarker"), Color("colorBackgroundLighter")]), startPoint: .top, endPoint: .bottom))
+            LinearGradient(gradient: Gradient(
+                colors: [Color("colorBackgroundDarker"), Color("colorBackgroundLighter")]),
+                           startPoint: .top, endPoint: .bottom))
+        .navigationBarHidden(true)
     }
 }
 

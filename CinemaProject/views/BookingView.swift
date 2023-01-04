@@ -2,7 +2,7 @@ import SwiftUI
 
 struct BookingView: View {
     
-    @Environment(\.dismiss) var dismiss
+    @Environment(\.presentationMode) var dismiss
     
     @State var gradient = [Color("colorBackgroundDarker").opacity(0), Color("colorBackgroundDarker"), Color("colorBackgroundDarker"), Color("colorBackgroundDarker")]
     
@@ -11,13 +11,12 @@ struct BookingView: View {
     @State var bindingSelection = false
     
     var body: some View {
-        NavigationView {
+        
             ZStack {
                 Image("booking")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(maxHeight: .infinity, alignment: .top)
-                    .ignoresSafeArea()
                 
                 VStack {
                     LinearGradient(colors: gradient, startPoint: .top, endPoint: .bottom)
@@ -28,7 +27,7 @@ struct BookingView: View {
                 VStack(spacing: 0.0) {
                     HStack {
                         CircleButton(action: {
-                            dismiss()
+                            dismiss.wrappedValue.dismiss()
                         }, image: "arrow.left")
                         
                         Spacer()
@@ -36,6 +35,7 @@ struct BookingView: View {
                         CircleButton(action: {}, image: "ellipsis")
                         
                     }.padding(24)
+                        .padding(.top, 36)
                     
                     Text("Doctor Strange")
                         .font(.title3)
@@ -95,7 +95,7 @@ struct BookingView: View {
                             .padding(.top, 20)
                     }
                     
-                    NavigationLink{
+                    NavigationLink {
                         SeatsView()
                     } label: {
                         LargeButton()
@@ -104,9 +104,10 @@ struct BookingView: View {
                     }
                     
                 }.frame(maxHeight: .infinity, alignment: .top)
+                
             }.background(Color("colorBackgroundDarker"))
-            
-        }.navigationBarBackButtonHidden(true)
+                .ignoresSafeArea()
+                .navigationBarHidden(true)
     }
 }
 
