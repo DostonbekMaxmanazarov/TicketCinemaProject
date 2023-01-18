@@ -1,14 +1,7 @@
-//
-//  LargeButton.swift
-//  CinemaProject
-//
-//  Created by MacBook on 29/12/22.
-//
-
 import SwiftUI
 
 struct LargeButton: View {
-    var selectedBorderColors: [Color] = [Color("colorPink"), Color("colorPink").opacity(0), Color("colorPink").opacity(0)]
+    var selectedBorderColors: [Color] = [Color("colorPink"), Color("colorWisteriaCircle"), Color("colorElectricBlue")]
         
         var body: some View {
             Text("Reservation")
@@ -16,7 +9,7 @@ struct LargeButton: View {
                 .fontWeight(.medium)
                 .foregroundColor(.white)
                 .frame(maxWidth: .infinity, maxHeight: 60)
-                .background(LinearGradient(colors: [Color("colorBackgroundDarker"), Color("colorBackgroundLighter")], startPoint: .bottomTrailing, endPoint: .topLeading))
+                .background(LinearGradient(colors: [Color("colorBackgroundLighter"), Color("colorElectiricIndigo")], startPoint: .bottomTrailing, endPoint: .topLeading))
                 .cornerRadius(20)
                 .overlay {
                     RoundedRectangle(cornerRadius: 20)

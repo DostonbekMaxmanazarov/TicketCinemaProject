@@ -3,7 +3,7 @@ import SwiftUI
 struct ScrollSectionView: View {
     
     @State var title = "Now playing"
-    @State var images: [String] = ["poster1", "poster2", "poster3", "poster4", "poster5", "poster6", "poster7"]
+    @State var images: [String] = ["image_1", "image_2", "image_3", "image_4", "image_5", "image_6", "poster7"]
     
     var body: some View {
         VStack(alignment: .leading) {

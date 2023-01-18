@@ -12,7 +12,8 @@ struct RoundButton: View {
             Text("Buy")
                 .font(.subheadline)
                 .frame(width: 70, height: 70)
-                .background(.ultraThinMaterial)
+                .foregroundColor(.white)
+                .background(Color("colorLime"))
                 .cornerRadius(40)
                 .overlay(
                     Circle()

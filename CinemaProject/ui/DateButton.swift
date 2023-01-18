@@ -13,8 +13,8 @@ struct DateButton: View {
     var currentBorderColors: [Color] = [Color("colorLightBlue"), Color("colorLightBlue").opacity(0), Color("colorLightBlue").opacity(0)]
     var currentGradient: [Color] = [Color("colorBackgroundLighter"), Color("colorGreenCircle")]
     
-    var selectedBorderColors: [Color] = [Color("colorPink"), Color("colorPink").opacity(0), Color("colorPink").opacity(0)]
-    var selectedGradient: [Color] = [Color("colorSlateBlue"), Color("colorBackgroundLighter")]
+    var selectedBorderColors: [Color] = [Color("colorWisteriaCircle"), Color("colorWisteriaCircle").opacity(0), Color("colorWisteriaCircle").opacity(0)]
+    var selectedGradient: [Color] = [Color("colorSlateBlue"), Color("colorElectiricIndigo")]
     
     var body: some View {
         Button {

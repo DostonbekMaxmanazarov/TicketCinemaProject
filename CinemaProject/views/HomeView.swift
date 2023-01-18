@@ -4,11 +4,11 @@ struct HomeView: View {
     
     @State private var animate = false
     
-    @State var images1: [String] = ["poster1", "poster2", "poster3", "poster4", "poster5", "poster6"]
+    @State var images1: [String] = ["image_1", "image_2", "image_3", "image_4", "image_5", "image_6"]
     
-    @State var images2: [String] = ["poster7", "poster8", "poster9", "poster10", "poster11", "poster12"]
+    @State var images2: [String] = ["image_7", "image_8", "image_9", "image_10", "image_11", "image_12"]
     
-    @State var images3: [String] = ["poster13", "poster14", "poster15", "poster16", "poster17", "poster18"]
+    @State var images3: [String] = ["image_13", "image_14", "image_15", "image_16", "image_17", "image_18"]
     
     var body: some View {
         ZStack {
